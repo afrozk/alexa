@@ -13,33 +13,28 @@ Building your first skill will comprise of four steps.
 2. Set up our skill in the Amazon Alexa Skills Developer Portal, and link our lambda account to that skill. 
 3. Test using the Amazon service simulator and on an Alexa-enabled device. 
 
-
 ## Step 1
 
 * Login or create an account at [Amazon Web Services](https://aws.amazon.com/) with the same Amazon account that your Alexa device is linked to.
 
 Go to lambda service in Amazon. Click Create Function. Search Alexa under Blueprints. Select "alexa-skill-kit-sdk-factskill" from blueprint as shown in the screen.
-Enter the name of your Lambda function. It’s not very important what the name is but it needs to be unique, you can just use “myQuoter”. In the top right it next to your name it should say “Ireland”. If that’s not the case please select “EU (Ireland)” from the dropdown. Choose "LamdaPostsReaderRole"
+Enter the name of your Lambda function. It’s not very important what the name is but it needs to be unique, you can just use “myQuoter”. In the top right it next to your name it should say “Ireland”. If that’s not the case please select “EU (Ireland)” from the dropdown.
+
+![lambda1](https://user-images.githubusercontent.com/13482748/33055343-12ca250a-cea5-11e7-8b28-f1d88e6a8de7.png)
 
 Copy the [Quoter application source code](https://github.com/afrozk/alexa/blob/master/src/index.js)
 
 Back in Lambda, you’re going to scroll down a bit and paste the code you copied from GitHub into the large text box under “Lambda function code”.
 
-
-
 Scroll down a bit further to the “Lambda function handler and role” section. You’re going to want to set the role to “lambda\_basic\_execution”. It’s important to note that if this is your first time using Lambda, you’ll have to create the “lambda\_basic\_execution” role. You can do that by selecting the first option “* Basic Execution” and clicking the blue button on the next page. After you take that step, you should be able to select “lambda\_basic\_execution”.
-
 
 Once you’ve created the function, click on the “Triggers” tab, then click the “Add Trigger” link, then select “Alexa Skills Kit” from the model dropdown.
 
 Please note if you’ve never signed up for the [Amazon Developer Portal](https://developer.amazon.com/edw/home.html#/skills/list), you’ll have to do that first before the “Alexa Skills Kit” will appear from the Event Sources dropdown. Please also make sure you use the same Amazon account as the one you’re using for AWS and your Echo Device.
 
-
 Keep the Amazon Lambda tab open though, we’ll need to come back to it!
 
 ## Step 2
-
-
 
 Open the [Amazon Developer Skills portal](https://developer.amazon.com/edw/home.html#/skills/list) and login with the same Amazon account that your Alexa device is linked with.
 
@@ -50,6 +45,8 @@ Choose English (India) under language selection.
 
 The name of your Amazon Alexa skill must be unique for your account, and the invocation name is what you’ll use to activate the skill. “Alexa, tell <invocation name> to say a Quote”.  Click the yellow “Next” button when you’re ready!
 
+![amazon_developer2](https://user-images.githubusercontent.com/13482748/33055346-1baf3426-cea5-11e7-80ee-a6a745b169d7.png)
+
 Here is where we’re going to tell the skill which intents we support, and what type of words will trigger each intent. Get ready for some copy and pasting.
 
 
@@ -59,6 +56,8 @@ Paste it under Intent Schema Box.
 
 Open the [Daily Quote sample utterances](https://github.com/afrozk/alexa/blob/master/speechAssets/SampleUtterances.txt) and copy all of the text in the box.
 
+![amazon_developer](https://user-images.githubusercontent.com/13482748/33055345-1a43f644-cea5-11e7-96da-55bea7bf090e.png)
+
 
 Back in the Amazon Skills portal, paste the sample utterances you copied into the Sample Utterances field. Click the yellow “Next” button after you’ve pasted the Sample Utterances.
 
@@ -66,6 +65,8 @@ Change the radio button from “HTTPS” to “Lambda ARN” and select the “N
 
 
 The ARN is on the top right of the Lambda function page. I have it selected in the image above. You’ll want to copy the selection as I have it above.
+
+![lambda2](https://user-images.githubusercontent.com/13482748/33055344-1561e53c-cea5-11e7-8fba-a7fba63fc1d9.png)
 
 Paste the ARN into the text field, and press “Next”.
 
