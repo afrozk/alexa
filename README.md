@@ -12,7 +12,6 @@ Building your first skill will comprise of four steps.
 1. Copy the “Quoter” code into Amazon Lambda, which will be responsible for running the code. 
 2. Set up our skill in the Amazon Alexa Skills Developer Portal, and link our lambda account to that skill. 
 3. Test using the Amazon service simulator and on an Alexa-enabled device. 
-4. Walk through the steps of customizing your skill to your needs.
 
 
 ## Step 1
