@@ -1,0 +1,4 @@
+GetNewQuoteIntent a quote of the day
+GetNewQuoteIntent a quote
+GetNewQuoteIntent tell me a new quote
+GetNewQuoteIntent what is today's' quote
