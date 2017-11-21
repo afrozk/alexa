@@ -16,7 +16,7 @@ Building your first skill will comprise of four steps.
 
 ## Step 1
 
-* Login or create an account at https://aws.amazon.com/ with the same Amazon account that your Alexa device is linked to.
+* Login or create an account at [Amazon Web Services] https://aws.amazon.com/ with the same Amazon account that your Alexa device is linked to.
 
 Go to lambda service in Amazon. Click Create Function. Search Alexa under Blueprints. Select "alexa-skill-kit-sdk-factskill" from blueprint as shown in the screen.
 Enter the name of your Lambda function. It’s not very important what the name is but it needs to be unique, you can just use “myQuoter”. In the top right it next to your name it should say “Ireland”. If that’s not the case please select “EU (Ireland)” from the dropdown. Choose "LamdaPostsReaderRole"
